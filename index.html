@@ -10,23 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="media">
-      <div class="media__image">
-        <svg class="icon icon--primary">
-          <use href="images/sprite.svg#snap"></use>
-        </svg>
-      </div>
-      <div class="media__body">
-        <h3 class="media__title">Easy Start & Managed Updates</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          quisquam, ex nostrum vero voluptates dicta excepturi vel perspiciatis
-          consequuntur ab.
-        </p>
-      </div>
-    </div>
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium
+        facilis ex esse excepturi a, voluptatibus omnis aliquid at possimus!
+      </p>
+      <footer>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary quote__line">
+              <use href="images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title quote__author">John Smith</h3>
+            <p class="quote__organization">ABC Company</p>
+          </div>
+        </div>
+      </footer>
+    </blockquote>
   </body>
 </html>
