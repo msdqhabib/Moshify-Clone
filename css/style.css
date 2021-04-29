@@ -303,7 +303,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 7%;
 }
 
 .card--primary .card__header {
@@ -316,7 +316,15 @@ a {
   color: #fff;
 }
 
-/* plans */
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+/* Plans */
 .plan {
   transition: transform 0.2s ease-out;
 }
@@ -324,6 +332,7 @@ a {
 .plan__name {
   color: #fff;
   margin: 0;
+  padding: 0 0 35px 0;
   font-weight: 500;
   font-size: 2.4rem;
 }
@@ -340,6 +349,7 @@ a {
 }
 
 .plan__description {
+  padding-top: 20px;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
@@ -375,20 +385,23 @@ a {
   .plan--popular {
     transform: scale(1.1);
   }
+
   .plan__name {
     font-size: 1.4rem;
   }
+
   .plan__price {
     font-size: 5rem;
   }
+
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+
   .plan__description {
     font-size: 1.7rem;
   }
 }
-
 /* Media */
 
 .media {
@@ -466,6 +479,12 @@ a {
 @media screen and (min-width: 786px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -723,4 +742,14 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
